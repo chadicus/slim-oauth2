@@ -1,0 +1,12 @@
+<phpunit colors="true" forceCoversAnnotation="true">
+    <testsuites>
+        <testsuite name="Chadicus Slim OAuth2 Test Suite">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

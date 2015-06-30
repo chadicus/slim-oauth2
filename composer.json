@@ -1,0 +1,26 @@
+{
+    "name": "chadicus/slim-oauth2",
+    "description": "Routes and Middleware for Using OAuth2 within a Slim Framework API",
+    "keywords": ["slim", "oauth2", "middleware"],
+    "authors": [                                                                                                                                 
+        {                                                                                                                                        
+            "name": "Chad Gray",                                                                                                                 
+            "email": "chadwickgray@gmail.com",                                                                                                   
+            "role": "Developer"                                                                                                                  
+        }                                                                                                                                        
+    ],                                                                                                                                           
+    "license": "MIT",                                                                                                                            
+    "require": {
+        "php": "~5.4 || ~7.0",
+        "bshaffer/oauth2-server-php": "~1.7",
+        "slim/slim": "~2.0"
+    },
+    "require-dev": {                                                                                                                             
+        "phpunit/phpunit": "~4.0",                                                                                                               
+        "squizlabs/php_codesniffer": "~2.0",                                                                                                     
+        "satooshi/php-coveralls": "~0.6.1"                                                                                                       
+    }, 
+    "autoload": {
+        "psr-4": {"Slim\\OAuth2\\" : "src"}
+    }
+}
