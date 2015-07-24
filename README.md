@@ -29,3 +29,7 @@ This package is a metapackage aggregating the following components:
 * [chadicus/slim-oauth2-middleware](https://github.com/chadicus/slim-oauth2-middleware)
 * [chadicus/slim-oauth2-routes](https://github.com/chadicus/slim-oauth2-routes)
 
+## Examples
+
+Examples can be found in the [examples](examples/) folder.
+
