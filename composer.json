@@ -12,8 +12,8 @@
     "license": "MIT",                                                                                                                            
     "require": {
         "php": "~5.4",
-        "chadicus/slim-oauth2-http": "~0.1.1",
-        "chadicus/slim-oauth2-middleware": "~0.1",
+        "chadicus/slim-oauth2-http": "~0.1.2",
+        "chadicus/slim-oauth2-middleware": "~0.2",
         "chadicus/slim-oauth2-routes": "~0.1"
     },
     "suggest": {
