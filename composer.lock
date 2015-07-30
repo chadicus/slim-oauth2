@@ -56,16 +56,16 @@
         },
         {
             "name": "chadicus/slim-oauth2-http",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-http.git",
-                "reference": "74bef73c8fd75ec55d64cc15a66a600bf6c8d8e5"
+                "reference": "6a8f90650bc4246bec82c9fbec74012b1126c6a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/74bef73c8fd75ec55d64cc15a66a600bf6c8d8e5",
-                "reference": "74bef73c8fd75ec55d64cc15a66a600bf6c8d8e5",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/6a8f90650bc4246bec82c9fbec74012b1126c6a1",
+                "reference": "6a8f90650bc4246bec82c9fbec74012b1126c6a1",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +106,7 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2015-07-27 21:52:05"
+            "time": "2015-07-29 19:34:12"
         },
         {
             "name": "chadicus/slim-oauth2-middleware",
@@ -163,16 +163,16 @@
         },
         {
             "name": "chadicus/slim-oauth2-routes",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-routes.git",
-                "reference": "61f2a7b5a6da803fdefafa95d7919871a4643e0f"
+                "reference": "93d83a16ad36454478496b919c5e210c83d29c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/61f2a7b5a6da803fdefafa95d7919871a4643e0f",
-                "reference": "61f2a7b5a6da803fdefafa95d7919871a4643e0f",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/93d83a16ad36454478496b919c5e210c83d29c90",
+                "reference": "93d83a16ad36454478496b919c5e210c83d29c90",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "routing",
                 "slim"
             ],
-            "time": "2015-07-24 14:11:03"
+            "time": "2015-07-29 19:34:01"
         },
         {
             "name": "slim/slim",
