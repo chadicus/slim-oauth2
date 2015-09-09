@@ -2,18 +2,18 @@
     "name": "chadicus/slim-oauth2",
     "description": "OAuth2 routes, middleware and utilities for use within a Slim Framework API",
     "keywords": ["slim", "oauth2", "middleware", "routes", "http", "api"],
-    "authors": [                                                                                                                                 
-        {                                                                                                                                        
-            "name": "Chad Gray",                                                                                                                 
-            "email": "chadwickgray@gmail.com",                                                                                                   
-            "role": "Developer"                                                                                                                  
-        }                                                                                                                                        
-    ],                                                                                                                                           
-    "license": "MIT",                                                                                                                            
+    "authors": [
+        {
+            "name": "Chad Gray",
+            "email": "chadwickgray@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
     "require": {
         "php": "~5.4",
         "chadicus/slim-oauth2-http": "~0.1.2",
-        "chadicus/slim-oauth2-middleware": "~0.2",
+        "chadicus/slim-oauth2-middleware": "~0.2.1",
         "chadicus/slim-oauth2-routes": "~0.1"
     },
     "suggest": {
