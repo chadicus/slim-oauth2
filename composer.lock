@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b38b78fe33f4c410798322d16d0020f5",
+    "hash": "82833c40d40c278dae0a816fa1c81759",
+    "content-hash": "2a5ee6d09d179a83cf2eaf2bcee08701",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -56,16 +57,16 @@
         },
         {
             "name": "chadicus/slim-oauth2-http",
-            "version": "v0.1.3",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-http.git",
-                "reference": "6a8f90650bc4246bec82c9fbec74012b1126c6a1"
+                "reference": "acb226c517a0acb0270ff95d2b49721cbd53bbc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/6a8f90650bc4246bec82c9fbec74012b1126c6a1",
-                "reference": "6a8f90650bc4246bec82c9fbec74012b1126c6a1",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/acb226c517a0acb0270ff95d2b49721cbd53bbc8",
+                "reference": "acb226c517a0acb0270ff95d2b49721cbd53bbc8",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +107,7 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2015-07-29 19:34:12"
+            "time": "2015-09-16 22:41:09"
         },
         {
             "name": "chadicus/slim-oauth2-middleware",

@@ -1,5 +1,6 @@
 {
     "name": "chadicus/slim-oauth2",
+    "type": "metapackage",
     "description": "OAuth2 routes, middleware and utilities for use within a Slim Framework API",
     "keywords": ["slim", "oauth2", "middleware", "routes", "http", "api"],
     "authors": [
