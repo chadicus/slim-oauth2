@@ -4,28 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6125e2266b0d5a6dd957d8a5fd62a577",
-    "content-hash": "c34bcd1841f290d2a6df83e23df777e8",
+    "hash": "a60e25f7ca86e581d8fa515c1c573631",
+    "content-hash": "b0bc9bf9ba72a6fe2a0b637dc54ba00f",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
-            "version": "v1.7.1",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bshaffer/oauth2-server-php.git",
-                "reference": "7fde34c417e0f6542dfbe6aedf8132eb5575acfb"
+                "reference": "058c98f73209f9c49495e1799d32c035196fe8b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/7fde34c417e0f6542dfbe6aedf8132eb5575acfb",
-                "reference": "7fde34c417e0f6542dfbe6aedf8132eb5575acfb",
+                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/058c98f73209f9c49495e1799d32c035196fe8b8",
+                "reference": "058c98f73209f9c49495e1799d32c035196fe8b8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Required to use the DynamoDB storage engine",
+                "aws/aws-sdk-php": "~2.8 is required to use the DynamoDB storage engine",
+                "firebase/php-jwt": "~2.2 is required to use JWT features",
                 "predis/predis": "Required to use the Redis storage engine",
                 "thobbs/phpcassa": "Required to use the Cassandra storage engine"
             },
@@ -53,7 +54,7 @@
                 "oauth",
                 "oauth2"
             ],
-            "time": "2015-05-21 20:07:03"
+            "time": "2015-09-18 18:05:10"
         },
         {
             "name": "chadicus/slim-oauth2-http",
@@ -164,16 +165,16 @@
         },
         {
             "name": "chadicus/slim-oauth2-routes",
-            "version": "v0.1.3",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-routes.git",
-                "reference": "93d83a16ad36454478496b919c5e210c83d29c90"
+                "reference": "b4b72d1371fd2921d923909c21923845abb9c692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/93d83a16ad36454478496b919c5e210c83d29c90",
-                "reference": "93d83a16ad36454478496b919c5e210c83d29c90",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/b4b72d1371fd2921d923909c21923845abb9c692",
+                "reference": "b4b72d1371fd2921d923909c21923845abb9c692",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +214,7 @@
                 "routing",
                 "slim"
             ],
-            "time": "2015-07-29 19:34:01"
+            "time": "2015-09-22 00:44:28"
         },
         {
             "name": "slim/slim",

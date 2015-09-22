@@ -85,3 +85,38 @@ curl -H 'Authorization: Bearer c859d2c9eec4800a6277671eba72a5a6f54f8693' http://
 }
 ```
 
+## Use Authorization Code grant type
+
+Navigate to `http://localhost:8888/authorize?response_type=code&client_id=librarian&state=xyz`
+
+### Output
+
+![Authorize Form](https://raw.githubusercontent.com/chadicus/slim-oauth2/master/examples/mongo/form.png)
+
+--
+
+Click 'yes'
+
+## Output
+
+<h2>The authorization code is 437a8960671a751106196e8205979ab75c10db04</h2>
+
+--
+
+Request an access token using the authorization code
+
+```sh
+curl -u librarian:secret http://localhost:8888/token -d 'grant_type=authorization_code&code=437a8960671a751106196e8205979ab75c10db04'
+```
+
+## Output
+```
+{
+    "access_token": "6c44c025a5a3116072e179c2893466b4c346a6b5",
+    "expires_in": 3600,
+    "token_type": "Bearer",
+    "scope": null,
+    "refresh_token": "1b0fde4b878bddbb955784fa447b19fca9558abd"
+}
+```
+

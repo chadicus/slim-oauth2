@@ -11,7 +11,7 @@ use OAuth2\GrantType;
 $mongoDb = (new MongoClient())->selectDb('slim_oauth2');
 
 $storage = new Storage\Mongo($mongoDb);
-$storage->setClientDetails('librarian', 'secret', null, null, 'bookCreate');
+$storage->setClientDetails('librarian', 'secret', '/receive-code', null, 'bookCreate');
 $storage->setClientDetails('student', 's3cr3t');
 
 $server = new Server(
@@ -21,6 +21,7 @@ $server = new Server(
     ],
     [
         new GrantType\ClientCredentials($storage),
+        new GrantType\AuthorizationCode($storage),
     ]
 );
 
@@ -28,6 +29,9 @@ $app = new Slim();
 
 Routes\Token::register($app, $server);
 Routes\Authorize::register($app, $server);
+Routes\ReceiveCode::register($app);
+
+$app->config('templates.path', __DIR__ . '/../../vendor/chadicus/slim-oauth2-routes/templates');
 
 $authorization = new Middleware\Authorization($server);
 $authorization->setApplication($app);
