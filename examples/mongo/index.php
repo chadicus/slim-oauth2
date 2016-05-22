@@ -3,8 +3,9 @@
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Chadicus\Slim\OAuth2\Routes;
-use Chadicus\Slim\OAuth2\Middleware; use Slim\Slim;
-use OAuth2\Server;
+use Chadicus\Slim\OAuth2\Middleware;
+use Slim\Http;
+use Slim\Views;
 use OAuth2\Storage;
 use OAuth2\GrantType;
 
@@ -14,7 +15,7 @@ $storage = new Storage\Mongo($mongoDb);
 $storage->setClientDetails('librarian', 'secret', '/receive-code', null, 'bookCreate');
 $storage->setClientDetails('student', 's3cr3t');
 
-$server = new Server(
+$server = new OAuth2\Server(
     $storage,
     [
         'access_lifetime' => 3600,
@@ -25,19 +26,19 @@ $server = new Server(
     ]
 );
 
-$app = new Slim();
+$app = new Slim\App([]);
 
-Routes\Token::register($app, $server);
-Routes\Authorize::register($app, $server);
-Routes\ReceiveCode::register($app);
+$renderer = new Views\PhpRenderer( __DIR__ . '/../../vendor/chadicus/slim-oauth2-routes/templates');
 
-$app->config('templates.path', __DIR__ . '/../../vendor/chadicus/slim-oauth2-routes/templates');
+$app->map(['GET', 'POST'], Routes\Authorize::ROUTE, new Routes\Authorize($server, $renderer))->setName('authorize');
+$app->post(Routes\Token::ROUTE, new Routes\Token($server))->setName('token');
+$app->map(['GET', 'POST'], Routes\ReceiveCode::ROUTE, new Routes\ReceiveCode($renderer))->setName('receive-code');
 
-$authorization = new Middleware\Authorization($server);
-$authorization->setApplication($app);
+$authorization = new Middleware\Authorization($server, $app->getContainer());
 
-$app->get('/books', $authorization, function () use ($app, $mongoDb) {
+$app->get('/books', function ($request, $response) use ($mongoDb) {
     $result = [];
+    $status = 200;
     try {
         $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 5;
         $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
@@ -58,16 +59,19 @@ $app->get('/books', $authorization, function () use ($app, $mongoDb) {
             ];
         }
     } catch (\Exception $e) {
-        $app->response()->status(400);
+        $status = 400;
         $result = ['error' => $e->getMessage()];
     }
 
-    $app->contentType('application/json');
-    $app->response->setBody(json_encode($result));
-})->name('books-search');
+    $stream = fopen('php://temp', 'r+');
+    fwrite($stream, json_encode($result));
+    rewind($stream);
 
-$app->get('/books/:id', $authorization, function ($id) use ($app, $mongoDb) {
-    $book = $mongoDb->books->findOne(['_id' => new \MongoId($id)]);
+    return $response->withStatus($status)->withHeader('Content-Type', 'application/json')->withBody(new Http\Stream($stream));
+})->setName('books-search')->add($authorization);
+
+$app->get('/books/{id}', function ($request, $response, $args) use ($mongoDb) {
+    $book = $mongoDb->books->findOne(['_id' => new \MongoId($args['id'])]);
     if ($book === null) {
         $app->response()->status(404);
         $book = ['error' => "Book with id '{$id}' was not found"];
@@ -77,16 +81,17 @@ $app->get('/books/:id', $authorization, function ($id) use ($app, $mongoDb) {
     $book['url'] = "/books/{$book['_id']}";
     unset($book['_id']);
 
-    $app->contentType('application/json');
-    $app->response->setBody(json_encode($book));
-})->name('books-detail');
+    $stream = fopen('php://temp', 'r+');
+    fwrite($stream, json_encode($book));
+    rewind($stream);
 
-$app->post('/books', $authorization->withRequiredScope(['bookCreate']), function () use ($app, $mongoDb) {
-    $book = json_decode($app->request->getBody(), true);
+    return $response->withHeader('Content-Type', 'application/json')->withBody(new Http\Stream($stream));
+})->setName('books-detail')->add($authorization);
 
+$app->post('/books', function ($request, $response, $args) use ($mongoDb) {
+    $book = json_decode((string)$request->getBody(), true);
     $mongoDb->books->insert($book);
-    $app->response()->status(201);
-    $app->response()->headers->set('Location', "/books/{$book['_id']}");
-});
+    return $response->withStatus(201)->withHeader('Location', "/books/{$book['_id']}");
+})->setName('book-create')->add($authorization->withRequiredScope(['bookCreate']));
 
 $app->run();

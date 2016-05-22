@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dffbed56cdff7f8b2cb7734622ce7d29",
-    "content-hash": "c76c395ab2011869555c96fe5aadc24e",
+    "hash": "32c2a31a98dbf451ae379f499084b284",
+    "content-hash": "8d8daf99e4d10a2072e56aee01b7b6df",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -58,27 +58,27 @@
         },
         {
             "name": "chadicus/slim-oauth2-http",
-            "version": "v1.0.0",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-http.git",
-                "reference": "ad082c5f18e3cbaf446bc97cf3d59e67c5df54c3"
+                "reference": "cf77383615bd4a5017eca32fe0bf656132b0344d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/ad082c5f18e3cbaf446bc97cf3d59e67c5df54c3",
-                "reference": "ad082c5f18e3cbaf446bc97cf3d59e67c5df54c3",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/cf77383615bd4a5017eca32fe0bf656132b0344d",
+                "reference": "cf77383615bd4a5017eca32fe0bf656132b0344d",
                 "shasum": ""
             },
             "require": {
-                "bshaffer/oauth2-server-php": "~1.7",
-                "php": "~5.5 || ~7.0",
-                "slim/slim": "~2.0"
+                "bshaffer/oauth2-server-php": "~1.8",
+                "php": "~5.6 || ~7.0",
+                "slim/slim": "~3.0"
             },
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1"
+                "phpunit/phpunit": "~5.3",
+                "satooshi/php-coveralls": "~1.0"
             },
             "suggest": {
                 "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
@@ -108,32 +108,32 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-02-03 21:12:46"
+            "time": "2016-05-22 23:32:28"
         },
         {
             "name": "chadicus/slim-oauth2-middleware",
-            "version": "v1.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-middleware.git",
-                "reference": "9b475db4f9a6a094a9c1be653bf13b73fbbcb699"
+                "reference": "376739910074134578e306acc4dd957e0eb15322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/9b475db4f9a6a094a9c1be653bf13b73fbbcb699",
-                "reference": "9b475db4f9a6a094a9c1be653bf13b73fbbcb699",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/376739910074134578e306acc4dd957e0eb15322",
+                "reference": "376739910074134578e306acc4dd957e0eb15322",
                 "shasum": ""
             },
             "require": {
-                "bshaffer/oauth2-server-php": "~1.7",
-                "chadicus/slim-oauth2-http": "~1.0",
-                "php": "~5.5 || ~7.0",
-                "slim/slim": "~2.0"
+                "bshaffer/oauth2-server-php": "~1.8",
+                "chadicus/slim-oauth2-http": "~3.0",
+                "php": "~5.6 || ~7.0",
+                "slim/slim": "~3.0"
             },
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1"
+                "phpunit/phpunit": "~5.0",
+                "satooshi/php-coveralls": "~1.0"
             },
             "suggest": {
                 "chadicus/slim-oauth2-routes": "Offers standard OAuth2 routes for slim applications"
@@ -161,35 +161,37 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-02-04 01:20:10"
+            "time": "2016-05-22 18:14:25"
         },
         {
             "name": "chadicus/slim-oauth2-routes",
-            "version": "v1.1.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-routes.git",
-                "reference": "bd4fb94c3224e66a1a7c3278a1121fb28ec50bbe"
+                "reference": "0d9a163929d5710d794de2fe8ee93fc9247ac467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/bd4fb94c3224e66a1a7c3278a1121fb28ec50bbe",
-                "reference": "bd4fb94c3224e66a1a7c3278a1121fb28ec50bbe",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/0d9a163929d5710d794de2fe8ee93fc9247ac467",
+                "reference": "0d9a163929d5710d794de2fe8ee93fc9247ac467",
                 "shasum": ""
             },
             "require": {
-                "bshaffer/oauth2-server-php": "~1.7",
-                "chadicus/slim-oauth2-http": "~1.0",
-                "php": "~5.5 || ~7.0",
-                "slim/slim": "~2.0"
+                "bshaffer/oauth2-server-php": "~1.8",
+                "chadicus/slim-oauth2-http": "~3.0.1",
+                "php": "~5.6 || ~7.0",
+                "slim/slim": "~3.0"
             },
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1"
+                "phpunit/phpunit": "~5.0",
+                "satooshi/php-coveralls": "~1.0",
+                "slim/php-view": "~2.0"
             },
             "suggest": {
-                "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests."
+                "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
+                "slim/php-view": "Simple template rendering"
             },
             "type": "library",
             "autoload": {
@@ -214,32 +216,104 @@
                 "routing",
                 "slim"
             ],
-            "time": "2016-04-27 18:04:12"
+            "time": "2016-05-22 23:36:47"
         },
         {
-            "name": "slim/slim",
-            "version": "2.6.2",
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slimphp/Slim.git",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37"
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/20a02782f76830b67ae56a5c08eb1f563c351a37",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "79843dce62ac52e9b628e73d5f1264cad10c65a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/79843dce62ac52e9b628e73d5f1264cad10c65a6",
+                "reference": "79843dce62ac52e9b628e73d5f1264cad10c65a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2016-04-18 11:33:20"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "suggest": {
-                "ext-mcrypt": "Required for HTTP cookie encryption"
-            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
-                    "Slim": "."
+                    "Pimple": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -248,29 +322,196 @@
             ],
             "authors": [
                 {
-                    "name": "Josh Lockhart",
-                    "email": "info@joshlockhart.com",
-                    "homepage": "http://www.joshlockhart.com/"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
-            "description": "Slim Framework, a PHP micro framework",
-            "homepage": "http://github.com/codeguy/Slim",
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
             "keywords": [
-                "microframework",
-                "rest",
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11 15:10:35"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "794073a27b2dd9ef492124263038291b7f8daeb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/794073a27b2dd9ef492124263038291b7f8daeb3",
+                "reference": "794073a27b2dd9ef492124263038291b7f8daeb3",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "nikic/fast-route": "^1.0",
+                "php": ">=5.5.0",
+                "pimple/pimple": "^3.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\": "Slim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@akrabat.com",
+                    "homepage": "http://akrabat.com"
+                },
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "https://joshlockhart.com"
+                },
+                {
+                    "name": "Gabriel Manricks",
+                    "email": "gmanricks@me.com",
+                    "homepage": "http://gabrielmanricks.com"
+                },
+                {
+                    "name": "Andrew Smith",
+                    "email": "a.smith@silentworks.co.uk",
+                    "homepage": "http://silentworks.co.uk"
+                }
+            ],
+            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+            "homepage": "http://slimframework.com",
+            "keywords": [
+                "api",
+                "framework",
+                "micro",
                 "router"
             ],
-            "time": "2015-03-08 18:41:17"
+            "time": "2016-05-16 18:49:10"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "slim/php-view",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/PHP-View.git",
+                "reference": "8bae5b10d10c51596ef8d8113b3b63678718adcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/PHP-View/zipball/8bae5b10d10c51596ef8d8113b3b63678718adcb",
+                "reference": "8bae5b10d10c51596ef8d8113b3b63678718adcb",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0",
+                "slim/slim": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\Views\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glenn Eggleton",
+                    "email": "geggleto@gmail.com"
+                }
+            ],
+            "description": "Render PHP view scripts into a PSR-7 Response object.",
+            "keywords": [
+                "framework",
+                "php",
+                "phtml",
+                "renderer",
+                "slim",
+                "template",
+                "view"
+            ],
+            "time": "2016-03-04 09:48:50"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": "~5.4"
-    },
-    "platform-dev": []
+    "platform": [],
+    "platform-dev": {
+        "ext-mongo": "~1.1"
+    }
 }
