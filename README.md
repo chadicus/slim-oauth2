@@ -7,7 +7,7 @@ A collection of OAuth2 routes, middleware and utilities for use within a [Slim F
 
 ## Requirements
 
-Chadicus\Slim\OAuth2 requires PHP 5.4 (or later).
+Chadicus\Slim\OAuth2 requires PHP 5.6 (or later).
 
 ##Composer
 To add the library as a local, per-project dependency use [Composer](http://getcomposer.org)! Simply add a dependency on
@@ -16,7 +16,7 @@ To add the library as a local, per-project dependency use [Composer](http://getc
 ```json
 {
     "require": {
-        "chadicus/slim-oauth2": "~1.0"
+        "chadicus/slim-oauth2": "~3.0"
     }
 }
 ```
