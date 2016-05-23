@@ -58,16 +58,16 @@
         },
         {
             "name": "chadicus/slim-oauth2-http",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-http.git",
-                "reference": "cf77383615bd4a5017eca32fe0bf656132b0344d"
+                "reference": "794940f284bb12090f0273d32c3849ef8d7efe84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/cf77383615bd4a5017eca32fe0bf656132b0344d",
-                "reference": "cf77383615bd4a5017eca32fe0bf656132b0344d",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/794940f284bb12090f0273d32c3849ef8d7efe84",
+                "reference": "794940f284bb12090f0273d32c3849ef8d7efe84",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,8 @@
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
                 "phpunit/phpunit": "~5.3",
-                "satooshi/php-coveralls": "~1.0"
+                "satooshi/php-coveralls": "~1.0",
+                "zendframework/zend-diactoros": "~1.3"
             },
             "suggest": {
                 "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
@@ -108,20 +109,20 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-05-22 23:32:28"
+            "time": "2016-05-23 19:06:10"
         },
         {
             "name": "chadicus/slim-oauth2-middleware",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-middleware.git",
-                "reference": "376739910074134578e306acc4dd957e0eb15322"
+                "reference": "43d932e7270a7935a397d88b72ba715bcd435d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/376739910074134578e306acc4dd957e0eb15322",
-                "reference": "376739910074134578e306acc4dd957e0eb15322",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/43d932e7270a7935a397d88b72ba715bcd435d58",
+                "reference": "43d932e7270a7935a397d88b72ba715bcd435d58",
                 "shasum": ""
             },
             "require": {
@@ -161,20 +162,20 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-05-22 18:14:25"
+            "time": "2016-05-23 19:28:05"
         },
         {
             "name": "chadicus/slim-oauth2-routes",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-routes.git",
-                "reference": "0d9a163929d5710d794de2fe8ee93fc9247ac467"
+                "reference": "90cda05e48af0e5982fbd63996460fb7bc69542c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/0d9a163929d5710d794de2fe8ee93fc9247ac467",
-                "reference": "0d9a163929d5710d794de2fe8ee93fc9247ac467",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/90cda05e48af0e5982fbd63996460fb7bc69542c",
+                "reference": "90cda05e48af0e5982fbd63996460fb7bc69542c",
                 "shasum": ""
             },
             "require": {
@@ -216,7 +217,7 @@
                 "routing",
                 "slim"
             ],
-            "time": "2016-05-22 23:36:47"
+            "time": "2016-05-23 19:28:12"
         },
         {
             "name": "container-interop/container-interop",
