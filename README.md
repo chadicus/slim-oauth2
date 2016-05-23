@@ -3,10 +3,7 @@
 [![Total Downloads](http://img.shields.io/packagist/dt/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
 [![License](http://img.shields.io/packagist/l/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
 
-A collection of [OAuth2](http://bshaffer.github.io/oauth2-server-php-docs/) routes, middleware and utilities for use within a [Slim 3 Framework](http://www.slimframework.com/) API
-
-requests and responses. While this
-libray is entended for use with Slim 3, it should work with any PSR-7 compatible framework.
+A collection of [OAuth2 Server](http://bshaffer.github.io/oauth2-server-php-docs/) routes, middleware and utilities for use within a [Slim 3 Framework](http://www.slimframework.com/) API
 
 ## Requirements
 
