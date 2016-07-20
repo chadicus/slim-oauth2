@@ -16,8 +16,8 @@
         "chadicus/slim-oauth2-middleware": "~3.0",
         "chadicus/slim-oauth2-routes": "~3.0"
     },
-    "require-dev": {
-        "ext-mongo": "~1.1",
-        "slim/php-view": "~2.0"
+    "suggest": {
+        "ext-mongo": "Required for mongo example",
+        "slim/php-view": "Required for examples"
     }
 }
