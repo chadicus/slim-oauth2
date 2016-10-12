@@ -10,15 +10,10 @@ A collection of [OAuth2 Server](http://bshaffer.github.io/oauth2-server-php-docs
 Chadicus\Slim\OAuth2 requires PHP 5.6 (or later).
 
 ##Composer
-To add the library as a local, per-project dependency use [Composer](http://getcomposer.org)! Simply add a dependency on
-`chadicus/slim-oauth2` to your project's `composer.json` file such as:
+To add the library as a local, per-project dependency use [Composer](http://getcomposer.org)! Simply add a dependency on `chadicus/slim-oauth2` to your project's `composer.json` file such as:
 
-```json
-{
-    "require": {
-        "chadicus/slim-oauth2": "~3.0"
-    }
-}
+```sh
+composer require chadicus/slim-oauth2
 ```
 
 ## Components
