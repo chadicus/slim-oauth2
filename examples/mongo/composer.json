@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ext-mongo": "^1.6",
+        "chadicus/slim-oauth2": "^3.0"
+    }
+}

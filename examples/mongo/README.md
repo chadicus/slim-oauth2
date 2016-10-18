@@ -1,13 +1,19 @@
 # Books API Example
 
+## Install dependencies
+```sh
+cd examples/mongo
+composer install
+```
+
 ## Load the book data
 ```sh
-./examples/mongo/load.php
+./load.php
 ```
 
 ## Run the example app
 ```sh
-php -S localhost:8888 -t examples/mongo examples/mongo/index.php
+php -S localhost:8888 -t . ./index.php
 ```
 
 ## Obtain an access token

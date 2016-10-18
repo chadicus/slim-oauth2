@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Chadicus\Slim\OAuth2\Routes;
 use Chadicus\Slim\OAuth2\Middleware;
@@ -28,7 +28,7 @@ $server = new OAuth2\Server(
 
 $app = new Slim\App([]);
 
-$renderer = new Views\PhpRenderer( __DIR__ . '/../../vendor/chadicus/slim-oauth2-routes/templates');
+$renderer = new Views\PhpRenderer( __DIR__ . '/vendor/chadicus/slim-oauth2-routes/templates');
 
 $app->map(['GET', 'POST'], Routes\Authorize::ROUTE, new Routes\Authorize($server, $renderer))->setName('authorize');
 $app->post(Routes\Token::ROUTE, new Routes\Token($server))->setName('token');
@@ -71,21 +71,25 @@ $app->get('/books', function ($request, $response) use ($mongoDb) {
 })->setName('books-search')->add($authorization);
 
 $app->get('/books/{id}', function ($request, $response, $args) use ($mongoDb) {
-    $book = $mongoDb->books->findOne(['_id' => new \MongoId($args['id'])]);
+    $id = $args['id'];
+    $book = $mongoDb->books->findOne(['_id' => new \MongoId($id)]);
+    $status = 200;
+    $result = null;
     if ($book === null) {
-        $app->response()->status(404);
-        $book = ['error' => "Book with id '{$id}' was not found"];
+        $status = 404;
+        $result = ['error' => "Book with id '{$id}' was not found"];
+    } else {
+        $result = [
+            'id' => (string)$book['_id'],
+            'url' => "/books/{$book['_id']}",
+        ];
     }
 
-    $book['id'] = (string)$book['_id'];
-    $book['url'] = "/books/{$book['_id']}";
-    unset($book['_id']);
-
     $stream = fopen('php://temp', 'r+');
-    fwrite($stream, json_encode($book));
+    fwrite($stream, json_encode($result));
     rewind($stream);
 
-    return $response->withHeader('Content-Type', 'application/json')->withBody(new Http\Stream($stream));
+    return $response->withStatus($status)->withHeader('Content-Type', 'application/json')->withBody(new Http\Stream($stream));
 })->setName('books-detail')->add($authorization);
 
 $app->post('/books', function ($request, $response, $args) use ($mongoDb) {
