@@ -64,7 +64,7 @@ curl -H 'Authorization: Bearer c859d2c9eec4800a6277671eba72a5a6f54f8693' http://
 
 ## Create a new book
 ```sh
-curl -i -X POST -H Content-Type:application/json -H 'Authorization: Bearer c859d2c9eec4800a6277671eba72a5a6f54f8693' -d @examples/mongo/create.json http://localhost:8888/books
+curl -i -X POST -H Content-Type:application/json -H 'Authorization: Bearer c859d2c9eec4800a6277671eba72a5a6f54f8693' -d @create.json http://localhost:8888/books
 ```
 
 ### Output
