@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bce3c94e085d08ba6853b706a009e6eb",
-    "content-hash": "6970f3dbaaab75303a1592cfc77d8dbc",
+    "hash": "9808673639216e83de0ae7e719847a50",
+    "content-hash": "e96910c5dd520e3a370fcf437eb2a2f7",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -57,29 +57,74 @@
             "time": "2015-09-18 18:05:10"
         },
         {
-            "name": "chadicus/slim-oauth2-http",
-            "version": "v3.0.3",
+            "name": "chadicus/psr-middleware",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chadicus/slim-oauth2-http.git",
-                "reference": "794940f284bb12090f0273d32c3849ef8d7efe84"
+                "url": "https://github.com/chadicus/psr-middleware.git",
+                "reference": "8a5a9b409bebba6a8feaddeea4766f7a0eca9214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/794940f284bb12090f0273d32c3849ef8d7efe84",
-                "reference": "794940f284bb12090f0273d32c3849ef8d7efe84",
+                "url": "https://api.github.com/repos/chadicus/psr-middleware/zipball/8a5a9b409bebba6a8feaddeea4766f7a0eca9214",
+                "reference": "8a5a9b409bebba6a8feaddeea4766f7a0eca9214",
                 "shasum": ""
             },
             "require": {
-                "bshaffer/oauth2-server-php": "~1.8",
-                "php": "~5.6 || ~7.0",
-                "slim/slim": "~3.0"
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0"
             },
             "require-dev": {
-                "chadicus/coding-standard": "~1.0",
-                "phpunit/phpunit": "~5.3",
-                "satooshi/php-coveralls": "~1.0",
-                "zendframework/zend-diactoros": "~1.3"
+                "chadicus/coding-standard": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chadicus\\Psr\\Middleware\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Foundational interface for PSR-7 middleware",
+            "keywords": [
+                "middleware",
+                "psr"
+            ],
+            "time": "2016-09-29 15:29:40"
+        },
+        {
+            "name": "chadicus/slim-oauth2-http",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/slim-oauth2-http.git",
+                "reference": "690b6b02c7429eabb960c8b520827ed12aaf66b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/690b6b02c7429eabb960c8b520827ed12aaf66b3",
+                "reference": "690b6b02c7429eabb960c8b520827ed12aaf66b3",
+                "shasum": ""
+            },
+            "require": {
+                "bshaffer/oauth2-server-php": "^1.8",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-diactoros": "^1.3"
+            },
+            "require-dev": {
+                "chadicus/coding-standard": "^1.1",
+                "humbug/humbug": "1.0.0-alpha2",
+                "phpunit/phpunit": "^5.5",
+                "satooshi/php-coveralls": "^1.0"
             },
             "suggest": {
                 "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
@@ -109,32 +154,34 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-05-23 19:06:10"
+            "time": "2016-11-15 17:07:36"
         },
         {
             "name": "chadicus/slim-oauth2-middleware",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-middleware.git",
-                "reference": "43d932e7270a7935a397d88b72ba715bcd435d58"
+                "reference": "b7888d47bba9cc6c147607a2721fb36794ec3748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/43d932e7270a7935a397d88b72ba715bcd435d58",
-                "reference": "43d932e7270a7935a397d88b72ba715bcd435d58",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/b7888d47bba9cc6c147607a2721fb36794ec3748",
+                "reference": "b7888d47bba9cc6c147607a2721fb36794ec3748",
                 "shasum": ""
             },
             "require": {
                 "bshaffer/oauth2-server-php": "~1.8",
-                "chadicus/slim-oauth2-http": "~3.0",
+                "chadicus/psr-middleware": "^1.0",
+                "chadicus/slim-oauth2-http": "^3.1",
                 "php": "~5.6 || ~7.0",
-                "slim/slim": "~3.0"
+                "psr/http-message": "^1.0"
             },
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
                 "phpunit/phpunit": "~5.0",
-                "satooshi/php-coveralls": "~1.0"
+                "satooshi/php-coveralls": "~1.0",
+                "zendframework/zend-diactoros": "^1.3"
             },
             "suggest": {
                 "chadicus/slim-oauth2-routes": "Offers standard OAuth2 routes for slim applications"
@@ -162,33 +209,33 @@
                 "oauth2",
                 "slim"
             ],
-            "time": "2016-05-23 19:28:05"
+            "time": "2016-11-15 18:03:30"
         },
         {
             "name": "chadicus/slim-oauth2-routes",
-            "version": "v3.0.2",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/slim-oauth2-routes.git",
-                "reference": "90cda05e48af0e5982fbd63996460fb7bc69542c"
+                "reference": "c29798bd962bccd2ac31b40c27e73456dc3f3fc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/90cda05e48af0e5982fbd63996460fb7bc69542c",
-                "reference": "90cda05e48af0e5982fbd63996460fb7bc69542c",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/c29798bd962bccd2ac31b40c27e73456dc3f3fc6",
+                "reference": "c29798bd962bccd2ac31b40c27e73456dc3f3fc6",
                 "shasum": ""
             },
             "require": {
                 "bshaffer/oauth2-server-php": "~1.8",
-                "chadicus/slim-oauth2-http": "~3.0.1",
-                "php": "~5.6 || ~7.0",
-                "slim/slim": "~3.0"
+                "chadicus/slim-oauth2-http": "^3.1",
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
                 "chadicus/coding-standard": "~1.0",
                 "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~1.0",
-                "slim/php-view": "~2.0"
+                "slim/php-view": "~2.0",
+                "zendframework/zend-diactoros": "^1.3"
             },
             "suggest": {
                 "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
@@ -217,136 +264,20 @@
                 "routing",
                 "slim"
             ],
-            "time": "2016-05-23 19:28:12"
-        },
-        {
-            "name": "container-interop/container-interop",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/container-interop/container-interop.git",
-                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
-                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Container\\": "src/Interop/Container/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "time": "2014-12-30 15:22:37"
-        },
-        {
-            "name": "nikic/fast-route",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/FastRoute.git",
-                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/8ea928195fa9b907f0d6e48312d323c1a13cc2af",
-                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "FastRoute\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov",
-                    "email": "nikic@php.net"
-                }
-            ],
-            "description": "Fast request router for PHP",
-            "keywords": [
-                "router",
-                "routing"
-            ],
-            "time": "2016-06-12 19:08:51"
-        },
-        {
-            "name": "pimple/pimple",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
-                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Pimple, a simple Dependency Injection Container",
-            "homepage": "http://pimple.sensiolabs.org",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "time": "2015-09-11 15:10:35"
+            "time": "2016-11-15 21:24:18"
         },
         {
             "name": "psr/http-message",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
             "require": {
@@ -374,6 +305,7 @@
                 }
             ],
             "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
             "keywords": [
                 "http",
                 "http-message",
@@ -382,77 +314,57 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
-            "name": "slim/slim",
-            "version": "3.4.2",
+            "name": "zendframework/zend-diactoros",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slimphp/Slim.git",
-                "reference": "a132385f736063d00632b52b3f8a389fe66fe4fa"
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/a132385f736063d00632b52b3f8a389fe66fe4fa",
-                "reference": "a132385f736063d00632b52b3f8a389fe66fe4fa",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/969ff423d3f201da3ff718a5831bb999bb0669b0",
+                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "^1.1",
-                "nikic/fast-route": "^1.0",
-                "php": ">=5.5.0",
-                "pimple/pimple": "^3.0",
-                "psr/http-message": "^1.0"
+                "php": "^5.4 || ^7.0",
+                "psr/http-message": "~1.0"
             },
             "provide": {
-                "psr/http-message-implementation": "1.0"
+                "psr/http-message-implementation": "~1.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0",
-                "squizlabs/php_codesniffer": "^2.5"
+                "phpunit/phpunit": "^4.6 || ^5.5",
+                "squizlabs/php_codesniffer": "^2.3.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev",
+                    "dev-develop": "1.4-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Slim\\": "Slim"
+                    "Zend\\Diactoros\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-2-Clause"
             ],
-            "authors": [
-                {
-                    "name": "Rob Allen",
-                    "email": "rob@akrabat.com",
-                    "homepage": "http://akrabat.com"
-                },
-                {
-                    "name": "Josh Lockhart",
-                    "email": "hello@joshlockhart.com",
-                    "homepage": "https://joshlockhart.com"
-                },
-                {
-                    "name": "Gabriel Manricks",
-                    "email": "gmanricks@me.com",
-                    "homepage": "http://gabrielmanricks.com"
-                },
-                {
-                    "name": "Andrew Smith",
-                    "email": "a.smith@silentworks.co.uk",
-                    "homepage": "http://silentworks.co.uk"
-                }
-            ],
-            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
-            "homepage": "http://slimframework.com",
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://github.com/zendframework/zend-diactoros",
             "keywords": [
-                "api",
-                "framework",
-                "micro",
-                "router"
+                "http",
+                "psr",
+                "psr-7"
             ],
-            "time": "2016-05-25 11:23:38"
+            "time": "2016-10-11 13:25:21"
         }
     ],
     "packages-dev": [],
