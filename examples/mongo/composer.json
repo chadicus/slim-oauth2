@@ -1,6 +1,8 @@
 {
     "require": {
         "ext-mongo": "^1.6",
-        "chadicus/slim-oauth2": "^3.0"
+        "chadicus/slim-oauth2": "^3.0",
+        "slim/slim": "^3.6",
+        "slim/php-view": "^2.2"
     }
 }
