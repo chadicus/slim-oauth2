@@ -15,9 +15,5 @@
         "chadicus/slim-oauth2-http": "^3.1",
         "chadicus/slim-oauth2-middleware": "^3.1",
         "chadicus/slim-oauth2-routes": "^3.1"
-    },
-    "suggest": {
-        "ext-mongo": "Required for mongo example",
-        "slim/php-view": "Required for examples"
     }
 }
