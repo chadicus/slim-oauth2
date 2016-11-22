@@ -1,8 +1,11 @@
 # Books API Example
 
-There are currently two storage examples available.
- * pdo
- * mongo
+There are currently three storage examples available.
+* [PDO](http://php.net/manual/en/book.pdo.php)
+* [Mongo (Legacy)](http://php.net/manual/en/book.mongo.php)
+* [MongoDB](http://php.net/manual/en/set.mongodb.php)
+
+In the example instructions below `pdo` can be replaced with `mongo` or `mongodb`
 
 ## Install dependencies and prepare the data storage
 ```sh

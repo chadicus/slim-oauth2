@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.6",
+        "slim/php-view": "^2.2",
+        "chadicus/oauth2-storage-mongodb": "^0.2.1",
+        "chadicus/slim-oauth2": "^3.1",
+        "chadicus/books-service": "^1.0"
+    }
+}
