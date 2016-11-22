@@ -1,3 +1,4 @@
 /vendor export-ignore
+/examples export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
