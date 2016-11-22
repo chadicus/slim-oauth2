@@ -30,7 +30,7 @@ $server = new OAuth2\Server(
 $app = new Slim\App([]);
 $container = $app->getContainer();
 $container['books-respository'] = function ($c) {
-    return new FileRepository(__DIR__ . '/../books.json');
+    return new FileRepository(__DIR__ . '/books.json');
 };
 
 $renderer = new Views\PhpRenderer( __DIR__ . '/vendor/chadicus/slim-oauth2-routes/templates');

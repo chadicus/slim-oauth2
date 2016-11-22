@@ -15,3 +15,5 @@ foreach (explode(';', $storage->getBuildSql()) as $statement) {
 $sql = 'INSERT INTO oauth_clients (client_id, client_secret, scope, redirect_uri) VALUES (?, ?, ?, ?)';
 $pdo->prepare($sql)->execute(['librarian', 'secret', 'bookCreate', '/receive-code']);
 $pdo->prepare($sql)->execute(['student', 's3cr3t', null, null]);
+
+copy(__DIR__ . '/../books.json', __DIR__ . '/books.json');
