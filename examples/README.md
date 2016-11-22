@@ -1,19 +1,20 @@
-# Books API Example using PDO storage
+# Books API Example
 
-## Install dependencies
+There are currently two storage examples available.
+ * pdo
+ * mongo
+
+## Install dependencies and prepare the data storage
 ```sh
 cd examples/pdo
 composer install
-```
-
-## Load the book data
-```sh
 ./load.php
 ```
 
 ## Run the example app
 ```sh
-php -S localhost:8888 -t . ./index.php
+cd ..
+php -S localhost:8888 -t pdo pdo/index.php
 ```
 
 ## Obtain an access token
@@ -84,7 +85,7 @@ curl -H 'Authorization: Bearer c859d2c9eec4800a6277671eba72a5a6f54f8693' http://
     "title": "Visual Studio 7: A Comprehensive Guide",
     "genre": "Computer",
     "price": 49.95,
-    "published": 987393600,
+    "publishDate": 987393600,
     "description": "Microsoft Visual Studio 7 is explored in depth, looking at how Visual Basic, Visual C++, C#, and ASP+ are integrated into a comprehensive development environment.",
     "id": "55b6be5e498b6293138b456f",
     "url": "/books/55b6be5e498b6293138b456f"
@@ -97,7 +98,7 @@ Navigate to `http://localhost:8888/authorize?response_type=code&client_id=librar
 
 ### Output
 
-![Authorize Form](https://raw.githubusercontent.com/chadicus/slim-oauth2/master/examples/pdo/form.png)
+![Authorize Form](https://raw.githubusercontent.com/chadicus/slim-oauth2/master/examples/form.png)
 
 --
 
