@@ -1,4 +1,10 @@
-/vendor export-ignore
-/examples export-ignore
+# Enforce Unix newlines
+* text=lf
+
+# Exclude unused files
+# see: https://redd.it/2jzp6k
+/vendor        export-ignore
+/examples      export-ignore
+/.github       export-ignore
 .gitattributes export-ignore
-.gitignore export-ignore
+.gitignore     export-ignore
