@@ -1,3 +1,4 @@
 /vendor/
 composer.lock
 books.json
+slim_oauth2.db
