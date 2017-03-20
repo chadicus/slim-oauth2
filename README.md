@@ -1,4 +1,4 @@
-#Chadicus\Slim\OAuth2
+# Chadicus\Slim\OAuth2
 [![Latest Stable Version](http://img.shields.io/packagist/v/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
 [![Total Downloads](http://img.shields.io/packagist/dt/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
 [![Reference Status](https://www.versioneye.com/php/chadicus:slim-oauth2/reference_badge.svg?style=flat)](https://www.versioneye.com/php/chadicus:slim-oauth2/references)
