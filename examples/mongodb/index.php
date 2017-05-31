@@ -10,7 +10,11 @@ use Slim\Views;
 use OAuth2\Storage;
 use OAuth2\GrantType;
 
-$mongoDb = (new MongoDB\Client())->selectDatabase('slim_oauth2');
+$mongoDb = (new MongoDB\Client(
+    'mongodb://localhost:27017',
+    [],
+    ['typeMap' => ['root' => 'array', 'document' => 'array', 'array' => 'array']]
+))->selectDatabase('slim_oauth2');
 
 $storage = new Storage\MongoDB($mongoDb);
 $storage->setClientDetails('librarian', 'secret', '/receive-code', null, 'bookCreate');
