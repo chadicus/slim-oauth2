@@ -1,8 +1,11 @@
 # Chadicus\Slim\OAuth2
-[![Latest Stable Version](http://img.shields.io/packagist/v/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
-[![Total Downloads](http://img.shields.io/packagist/dt/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
-[![Reference Status](https://www.versioneye.com/php/chadicus:slim-oauth2/reference_badge.svg?style=flat)](https://www.versioneye.com/php/chadicus:slim-oauth2/references)
-[![License](http://img.shields.io/packagist/l/chadicus/slim-oauth2.svg?style=flat)](https://packagist.org/packages/chadicus/slim-oauth2)
+[![Latest Stable Version](https://poser.pugx.org/chadicus/slim-oauth2/v/stable)](https://packagist.org/packages/chadicus/slim-oauth2)
+[![Latest Unstable Version](https://poser.pugx.org/chadicus/slim-oauth2/v/unstable)](https://packagist.org/packages/chadicus/slim-oauth2)
+[![License](https://poser.pugx.org/chadicus/slim-oauth2/license)](https://packagist.org/packages/chadicus/slim-oauth2)
+
+[![Total Downloads](https://poser.pugx.org/chadicus/slim-oauth2/downloads)](https://packagist.org/packages/chadicus/slim-oauth2)
+[![Daily Downloads](https://poser.pugx.org/chadicus/slim-oauth2/d/daily)](https://packagist.org/packages/chadicus/slim-oauth2)
+[![Monthly Downloads](https://poser.pugx.org/chadicus/slim-oauth2/d/monthly)](https://packagist.org/packages/chadicus/slim-oauth2)
 
 A collection of [OAuth2 Server](http://bshaffer.github.io/oauth2-server-php-docs/) routes, middleware and utilities for use within a [Slim 3 Framework](http://www.slimframework.com/) API
 
