@@ -32,3 +32,5 @@ This package is a metapackage aggregating the following components:
 
 Examples can be found in the [examples](examples/) folder.
 
+## Community
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/slim-oauth2/Lobby#)
