@@ -3,17 +3,11 @@
     "type": "metapackage",
     "description": "OAuth2 routes, middleware and utilities for use within a Slim Framework API",
     "keywords": ["slim", "oauth2", "middleware", "routes", "http", "api", "psr7"],
-    "authors": [
-        {
-            "name": "Chad Gray",
-            "email": "chadwickgray@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "license": "MIT",
     "require": {
-        "chadicus/slim-oauth2-http": "^3.1",
-        "chadicus/slim-oauth2-middleware": "^3.1",
-        "chadicus/slim-oauth2-routes": "^3.1"
+        "php": "^5.6 || ^7.0 || ^8.0",
+        "chadicus/slim-oauth2-http": "^3.2",
+        "chadicus/slim-oauth2-middleware": "^3.4",
+        "chadicus/slim-oauth2-routes": "^3.2"
     }
 }
